@@ -377,7 +377,7 @@ def postConnexion():
                                 
                                 
                             #On envoie en paramètre la liste des patients et des médecin pour pouvoir l'afficher dans le fichier admin.html
-                            return render_template('medecin.html', title='Bienvenue', utilisateur=user, datauser=datauser, patients=resultSetPatient)
+                            return render_template('medecin.html', title='Bienvenue', utilisateur=user, datauser=datauser, patients=resultSetPatient, rows=dataSet)
         
                         con.close()   
         else:
